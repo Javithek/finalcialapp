@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellbudget" rowHeight="70" id="gFJ-pb-kFI">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gFJ-pb-kFI" id="KDo-ap-b56">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google" translatesAutoresizingMaskIntoConstraints="NO" id="js8-jq-R4C">
+                        <rect key="frame" x="10" y="14" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="928-P9-vxg"/>
+                            <constraint firstAttribute="height" constant="40" id="brR-6D-9hL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                <color key="value" red="0.60636104059999996" green="0.60347046439999996" blue="0.58902115200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PBD-Vi-73l">
+                        <rect key="frame" x="60" y="14" width="40.5" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uE-dJ-moH">
+                                <rect key="frame" x="0.0" y="0.0" width="40.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osq-aN-1Kc">
+                                <rect key="frame" x="0.0" y="22" width="40.5" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" name="GrayColorItemTable"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="rSe-VL-qhW">
+                        <rect key="frame" x="140.5" y="14" width="214.5" height="53"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVM-Vo-AXZ">
+                                <rect key="frame" x="175" y="0.0" width="39.5" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" name="BlackHelveticTableItem"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQl-wz-ZZr">
+                                <rect key="frame" x="181.5" y="18.5" width="33" height="18"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                <color key="textColor" name="GrayColorItemTable"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-4z-riz">
+                                <rect key="frame" x="184" y="36.5" width="30.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" name="GrayColorItemTable"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="y2E-JW-2oF"/>
+                        </constraints>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z5k-xA-tJQ">
+                        <rect key="frame" x="363" y="32.5" width="8" height="8"/>
+                        <color key="backgroundColor" name="ButtonColorGreen"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="oTf-dM-jHW"/>
+                            <constraint firstAttribute="height" constant="8" id="yrn-qt-4GO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="z5k-xA-tJQ" secondAttribute="trailing" constant="4" id="6kc-fO-SU8"/>
+                    <constraint firstAttribute="bottom" secondItem="PBD-Vi-73l" secondAttribute="bottom" constant="11.5" id="DDQ-el-KXA"/>
+                    <constraint firstItem="PBD-Vi-73l" firstAttribute="leading" secondItem="js8-jq-R4C" secondAttribute="trailing" constant="10" id="DqO-Ul-ehB"/>
+                    <constraint firstItem="z5k-xA-tJQ" firstAttribute="leading" secondItem="rSe-VL-qhW" secondAttribute="trailing" constant="8" id="LTh-og-3pJ"/>
+                    <constraint firstItem="z5k-xA-tJQ" firstAttribute="top" secondItem="dQl-wz-ZZr" secondAttribute="top" id="VN4-OX-eLq"/>
+                    <constraint firstItem="rSe-VL-qhW" firstAttribute="top" secondItem="js8-jq-R4C" secondAttribute="top" id="czh-iY-CDd"/>
+                    <constraint firstItem="js8-jq-R4C" firstAttribute="leading" secondItem="KDo-ap-b56" secondAttribute="leading" constant="10" id="hW4-tC-ORX"/>
+                    <constraint firstItem="rSe-VL-qhW" firstAttribute="leading" secondItem="PBD-Vi-73l" secondAttribute="trailing" constant="40" id="kxy-V1-cGZ"/>
+                    <constraint firstAttribute="bottom" secondItem="rSe-VL-qhW" secondAttribute="bottom" constant="2.5" id="p1n-H5-V3y"/>
+                    <constraint firstItem="PBD-Vi-73l" firstAttribute="top" secondItem="js8-jq-R4C" secondAttribute="top" id="sk6-SQ-9Xm"/>
+                    <constraint firstItem="js8-jq-R4C" firstAttribute="top" secondItem="KDo-ap-b56" secondAttribute="top" constant="14" id="u6K-ll-F1g"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Google" width="17" height="18"/>
+        <namedColor name="BlackHelveticTableItem">
+            <color red="0.1215686275" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonColorGreen">
+            <color red="0.62352941179999999" green="0.74117647060000003" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayColorItemTable">
+            <color red="0.54117647059999996" green="0.56862745100000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

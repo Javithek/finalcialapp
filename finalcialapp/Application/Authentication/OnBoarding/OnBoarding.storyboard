@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DG7-J0-UDb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On Boarding Container View Controller-->
+        <scene sceneID="570-0l-SAy">
+            <objects>
+                <viewController id="DG7-J0-UDb" customClass="OnBoardingContainerViewController" customModule="finalcialapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Na4-Go-7HJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vv-kO-QPe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="hbT-jy-Azc" kind="embed" identifier="openOnBoarding" id="zCG-IJ-zik"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg5-1D-ZEA">
+                                <rect key="frame" x="20" y="613" width="335" height="34"/>
+                                <color key="backgroundColor" name="ButtonColorGreen"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Iniciar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                        <color key="value" red="0.31764705879999999" green="0.3921568627" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ygp-ES-jkG" kind="presentation" identifier="login" id="zib-Jx-8La"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PDZ-XL-phz">
+                                <rect key="frame" x="168" y="536" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yg5-1D-ZEA" firstAttribute="leading" secondItem="cNU-Gm-9i7" secondAttribute="leading" constant="20" id="JrG-f9-ioK"/>
+                            <constraint firstAttribute="bottom" secondItem="1Vv-kO-QPe" secondAttribute="bottom" id="LdV-h7-So6"/>
+                            <constraint firstItem="cNU-Gm-9i7" firstAttribute="bottom" secondItem="yg5-1D-ZEA" secondAttribute="bottom" constant="20" id="gaZ-KX-l9N"/>
+                            <constraint firstItem="yg5-1D-ZEA" firstAttribute="top" secondItem="PDZ-XL-phz" secondAttribute="bottom" constant="40" id="h4Q-Ys-oTA"/>
+                            <constraint firstItem="1Vv-kO-QPe" firstAttribute="top" secondItem="Na4-Go-7HJ" secondAttribute="top" id="jlX-s5-9Ke"/>
+                            <constraint firstItem="1Vv-kO-QPe" firstAttribute="leading" secondItem="Na4-Go-7HJ" secondAttribute="leading" id="mcq-cO-A1A"/>
+                            <constraint firstItem="PDZ-XL-phz" firstAttribute="centerX" secondItem="Na4-Go-7HJ" secondAttribute="centerX" id="qQE-Pc-GaE"/>
+                            <constraint firstAttribute="trailing" secondItem="1Vv-kO-QPe" secondAttribute="trailing" id="qdV-hr-L0X"/>
+                            <constraint firstItem="cNU-Gm-9i7" firstAttribute="trailing" secondItem="yg5-1D-ZEA" secondAttribute="trailing" constant="20" id="sUn-3P-XCk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cNU-Gm-9i7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hww-9t-sfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="-233"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="X8V-ql-VNB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="ygp-ES-jkG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NUo-pJ-RkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="221"/>
+        </scene>
+        <!--On Boarding View Controller-->
+        <scene sceneID="khO-qD-Ds1">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hbT-jy-Azc" customClass="OnBoardingViewController" customModule="finalcialapp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLh-NU-i6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="-233"/>
+        </scene>
+        <!--On Boarding Steps View Controller-->
+        <scene sceneID="Pfc-nW-nWC">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingSteps" id="pQd-mV-bhk" customClass="OnBoardingStepsViewController" customModule="finalcialapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GFW-AU-Nfl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L3t-Mi-e1z">
+                                <rect key="frame" x="62" y="167" width="250" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="3xg-HK-HRy"/>
+                                    <constraint firstAttribute="width" secondItem="L3t-Mi-e1z" secondAttribute="height" multiplier="15:8" id="oH4-tC-0f2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umB-Xe-EEp">
+                                <rect key="frame" x="20" y="350" width="335" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" name="ButtonColorGreen"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgI-v9-izN">
+                                <rect key="frame" x="20" y="407" width="335" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" name="GrayColorOnBoarding"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="umB-Xe-EEp" firstAttribute="top" secondItem="L3t-Mi-e1z" secondAttribute="bottom" constant="50" id="Brb-iD-fC3"/>
+                            <constraint firstItem="BgI-v9-izN" firstAttribute="top" secondItem="umB-Xe-EEp" secondAttribute="bottom" constant="8" id="FcW-7D-sL9"/>
+                            <constraint firstItem="L3t-Mi-e1z" firstAttribute="centerX" secondItem="GFW-AU-Nfl" secondAttribute="centerX" id="HWG-r4-sgf"/>
+                            <constraint firstItem="BgI-v9-izN" firstAttribute="leading" secondItem="HHh-eO-Hdi" secondAttribute="leading" constant="20" id="gYI-pC-ytZ"/>
+                            <constraint firstItem="L3t-Mi-e1z" firstAttribute="centerY" secondItem="GFW-AU-Nfl" secondAttribute="centerY" constant="-100" id="qVy-W0-lAE"/>
+                            <constraint firstItem="HHh-eO-Hdi" firstAttribute="trailing" secondItem="BgI-v9-izN" secondAttribute="trailing" constant="20" id="rLd-aG-Ft2"/>
+                            <constraint firstItem="umB-Xe-EEp" firstAttribute="leading" secondItem="HHh-eO-Hdi" secondAttribute="leading" constant="20" id="rr5-kb-tbL"/>
+                            <constraint firstItem="HHh-eO-Hdi" firstAttribute="trailing" secondItem="umB-Xe-EEp" secondAttribute="trailing" constant="20" id="zMa-EN-u9c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HHh-eO-Hdi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd2-th-qFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-233"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ButtonColorGreen">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayColorOnBoarding">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
